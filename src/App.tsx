@@ -1,5 +1,4 @@
 import React from 'react';
-import './App.css';
 import Auth from './Auth';
 
 function App() {
@@ -24,7 +23,7 @@ function App() {
           <p>Contact: 876534567</p>
           <form>
             <h3>Feedback</h3>
-            <textarea placeholder="Your feedback" rows="4" cols="50" />
+            <textarea placeholder="Your feedback" rows={4} cols={50} />
             <br />
             <button type="submit">Submit</button>
           </form>

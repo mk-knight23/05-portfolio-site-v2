@@ -4,12 +4,12 @@ function Auth() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
-  const handleSubmit = (event) => {
+  const handleSubmit = (event: React.FormEvent) => {
     event.preventDefault();
     console.log('Sign Up:', { email, password });
   };
 
-  const handleLogin = (event) => {
+  const handleLogin = (event: React.FormEvent) => {
     event.preventDefault();
     console.log('Login:', { email, password });
   };
