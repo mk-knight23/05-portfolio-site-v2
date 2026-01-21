@@ -16,26 +16,27 @@ function App() {
 
   return (
     <div className="min-h-screen bg-slate-50 font-sans selection:bg-indigo-100 italic-none">
-      {/* Hero Section */}
-      <section className="relative py-20 overflow-hidden bg-slate-900">
-        <div className="absolute top-0 left-0 w-full h-full opacity-10">
-          <div className="absolute top-1/2 left-1/4 w-96 h-96 bg-indigo-500 rounded-full blur-[120px] animate-pulse"></div>
-          <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-purple-500 rounded-full blur-[120px] animate-pulse delay-700"></div>
+      {/* Premium Hero Section */}
+      <section className="relative py-28 overflow-hidden bg-slate-950">
+        <div className="absolute inset-0 opacity-20 pointer-events-none">
+          <div className="absolute top-[-10%] left-[-10%] w-[60%] h-[60%] bg-indigo-500/10 rounded-full blur-[120px] animate-pulse"></div>
+          <div className="absolute bottom-[-10%] right-[-10%] w-[60%] h-[60%] bg-purple-500/10 rounded-full blur-[120px] animate-pulse delay-1000"></div>
         </div>
 
         <div className="max-w-7xl mx-auto px-6 relative z-10 text-center">
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
           >
-            <span className="inline-block px-4 py-1.5 mb-6 text-sm font-bold tracking-wider text-indigo-400 uppercase bg-indigo-400/10 rounded-full">
-              Learning Path 2024
+            <span className="inline-block px-5 py-2 mb-8 text-xs font-black tracking-[0.2em] text-indigo-400 uppercase bg-indigo-400/10 rounded-full border border-indigo-400/20 shadow-[0_0_20px_rgba(99,102,241,0.1)]">
+              ENGINEERING EXCELLENCE 2026
             </span>
-            <h1 className="text-5xl md:text-7xl font-black text-white mb-8 tracking-tight">
-              Master <span className="bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent">React JS</span>
+            <h1 className="text-6xl md:text-8xl font-black text-white mb-10 tracking-tighter leading-[0.9]">
+              Architect <br /><span className="bg-gradient-to-br from-indigo-400 via-white to-purple-400 bg-clip-text text-transparent">Digital Worlds</span>
             </h1>
-            <p className="max-w-2xl mx-auto text-lg text-slate-400 leading-relaxed mb-10">
-              A comprehensive guide to building modern, efficient, and scalable user interfaces with the world's most popular JavaScript library.
+            <p className="max-w-2xl mx-auto text-xl text-slate-400 leading-relaxed mb-12 font-medium">
+              A masterclass on building high-performance, accessible, and stunningly beautiful user interfaces with React.
             </p>
           </motion.div>
         </div>
@@ -54,15 +55,16 @@ function App() {
               key={item.id}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: idx * 0.1 }}
+              transition={{ delay: idx * 0.1, duration: 0.5 }}
               viewport={{ once: true }}
-              className="p-8 rounded-3xl bg-white border border-slate-200 hover:border-indigo-500/50 hover:shadow-2xl hover:shadow-indigo-500/10 transition-all group"
+              whileHover={{ y: -10, transition: { duration: 0.3 } }}
+              className="p-10 rounded-[2.5rem] bg-white border border-slate-100 hover:border-indigo-500/30 shadow-sm hover:shadow-[0_32px_64px_-16px_rgba(99,102,241,0.12)] transition-all duration-300 group"
             >
-              <div className="w-14 h-14 rounded-2xl bg-slate-50 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+              <div className="w-16 h-16 rounded-2xl bg-slate-50 flex items-center justify-center mb-8 group-hover:bg-indigo-50 transition-colors duration-300">
                 {item.icon}
               </div>
-              <h3 className="text-xl font-bold text-slate-900 mb-4">{item.title}</h3>
-              <p className="text-slate-600 leading-relaxed">{item.desc}</p>
+              <h3 className="text-2xl font-black text-slate-900 mb-4 tracking-tight">{item.title}</h3>
+              <p className="text-slate-500 leading-relaxed font-medium">{item.desc}</p>
             </motion.div>
           ))}
         </div>
@@ -89,22 +91,23 @@ function App() {
             </div>
           </div>
 
-          <div className="p-10 rounded-[2rem] bg-slate-900 text-white shadow-2xl">
-            <h3 className="text-2xl font-bold mb-8">Student Feedback</h3>
-            <form onSubmit={(e) => e.preventDefault()} className="space-y-6">
+          <div className="p-12 rounded-[3rem] bg-slate-950 text-white shadow-2xl relative overflow-hidden border border-white/5">
+            <div className="absolute top-0 right-0 w-32 h-32 bg-indigo-500/10 blur-3xl pointer-events-none" />
+            <h3 className="text-3xl font-black mb-8 tracking-tighter relative z-10">Enrolment & Support</h3>
+            <form onSubmit={(e) => e.preventDefault()} className="space-y-8 relative z-10">
               <div>
-                <label className="block text-sm font-medium text-slate-400 mb-2">Message</label>
+                <label className="block text-xs font-black text-slate-500 mb-3 uppercase tracking-widest">Share Your Vision</label>
                 <textarea
                   rows={4}
-                  placeholder="Tell us what you think..."
-                  className="w-full bg-white/5 border border-white/10 rounded-2xl p-4 focus:ring-2 focus:ring-indigo-500 focus:bg-white/10 outline-none transition-all placeholder:text-slate-600"
+                  placeholder="How can we help you master React?"
+                  className="w-full bg-white/[0.03] border border-white/10 rounded-2xl p-5 focus:ring-2 focus:ring-indigo-500/50 focus:bg-white/[0.06] focus:border-indigo-500/50 outline-none transition-all placeholder:text-slate-700 text-lg font-medium"
                   value={feedback}
                   onChange={(e) => setFeedback(e.target.value)}
                 />
               </div>
-              <button className="w-full py-4 bg-indigo-500 hover:bg-indigo-600 rounded-2xl font-bold flex items-center justify-center gap-2 transition-all group shadow-lg shadow-indigo-500/20">
-                Submit Feedback
-                <Send className="w-4 h-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
+              <button className="w-full py-5 bg-indigo-600 hover:bg-indigo-500 rounded-2xl font-black flex items-center justify-center gap-3 transition-all group shadow-xl shadow-indigo-500/20 active:scale-95">
+                Send Message
+                <Send className="w-5 h-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
               </button>
             </form>
           </div>

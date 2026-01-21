@@ -1,26 +1,30 @@
 # 05-portfolio-site-v2
 
-✨ Professional Repository Showcase Template
-
-## Live Deployments
-- Netlify: https://05-portfolio-site-v2-mkazi.netlify.app
-- GitHub Pages: https://mk-knight23.github.io/05-portfolio-site-v2/
-
-Status: 🟢 Live
-Last Updated: 2026-01-21T13:56:00+05:30
+✨ The definitive iteration of the portfolio series. High-impact typography, dark mode mastery, and a professional React architecture designed for the 2026 web.
 
 ## Features
-- 📱 Mobile Responsive
-- ⚡ Fast Performance
-- 🎨 Modern UI/UX
+- 🎓 Premium React Masterclass Interface
+- 🎨 High-Impact Typography & Dark Theme Mastery
+- 📱 Fully Responsive & Accessibility Focused
+- ⚛️ Modern React Hooks & Design Patterns
+- ⚡ Engineered for Speed with Vite 6
+
+## Tech Stack
+- **Frontend**: React 18, Tailwind CSS v4
+- **Build Tool**: Vite 6
+- **Icons**: Lucide React
+- **Animations**: Framer Motion
 
 ## Quick Start
 ```bash
-git clone https://github.com/mk-knight23/05-portfolio-site-v2.git
-cd 05-portfolio-site-v2
 npm install
 npm run dev
 ```
 
-## License
-MIT
+## Documentation
+Additional technical details can be found in the [docs/](docs/) directory.
+
+## Live Deployment
+GitHub Pages: [Pending]
+Status: 🟡 Initializing Pipeline
+Last Updated: 2026-01-21
