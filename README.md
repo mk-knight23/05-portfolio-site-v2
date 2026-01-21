@@ -1,26 +1,26 @@
 # 05-portfolio-site-v2
 
-Modern dark neon portfolio template with React, TypeScript, and Tailwind CSS.
+✨ Professional Repository Showcase Template
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/mk-knight23/05-portfolio-site-v2)
+## Live Deployments
+
+- **GitHub Pages:** https://mk-knight23.github.io/05-portfolio-site-v2/
+- **Vercel:** https://05-portfolio-site-v2.vercel.app
+
+Status: 🟡 GH Pages Live | Vercel Pending (Daily Limit)
 
 ## Features
-- 🌙 Dark neon aesthetic
-- ⚡ React 18 + TypeScript + Vite
-- 🎬 Framer Motion animations
-- 📱 Fully responsive
-- ♿ Accessible
-- 🔍 SEO optimized
+- 📱 Mobile Responsive
+- ⚡ Fast Performance
+- 🎨 Modern UI/UX
 
 ## Quick Start
 ```bash
 git clone https://github.com/mk-knight23/05-portfolio-site-v2.git
 cd 05-portfolio-site-v2
-npm install && npm run dev
+npm install
+npm run dev
 ```
-
-## Tech Stack
-React 18, TypeScript, Tailwind CSS, Framer Motion, Vite
 
 ## License
 MIT
