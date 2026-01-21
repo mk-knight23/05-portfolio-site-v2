@@ -4,5 +4,5 @@ import react from '@vitejs/plugin-react'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/kazi-website/', // Based on the homepage in package.json
+  base: './', // Fixed for GitHub Pages
 })
