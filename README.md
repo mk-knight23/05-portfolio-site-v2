@@ -4,18 +4,60 @@
 
 ---
 
-[![Live Demo](https://img.shields.io/badge/Live-Demo-818CF8?style=for-the-badge&logo=github)](https://mk-knight23.github.io/05-portfolio-frontend-ai/)
-[![GitHub](https://img.shields.io/badge/Source-Code-181717?style=for-the-badge&logo=github)](https://github.com/mk-knight23/05-portfolio-frontend-ai)
+[![GitHub Pages](https://img.shields.io/badge/GitHub-Pages-222222?style=for-the-badge&logo=github)](https://mk-knight23.github.io/05-portfolio-site-v2/)
+[![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel)](https://05-portfolio-personal-site-nextjs.vercel.app/)
+[![Netlify](https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify)](https://05-portfolio-frontend-ai.netlify.app/)
+[![Source](https://img.shields.io/badge/Source-Code-181717?style=for-the-badge&logo=github)](https://github.com/mk-knight23/05-portfolio-frontend-ai)
 
 ---
 
 ## About
 
-Frontend Engineer specializing in building AI-powered products, chat interfaces, and real-time data visualizations with React and TypeScript. Currently building the **VIBE Ecosystem** — a multi-product AI developer platform.
-
-**Experience:** Project Engineer (TURBO) at Wipro (Jul 2022 – Present)
+Frontend Engineer specializing in building AI-powered products, chat interfaces, and real-time data visualizations with React and TypeScript. Currently building the **AI-VIBE-ECOSYSTEM v2.0** — a multi-product, agent-driven developer platform.
 
 ---
+
+## 🏗️ What I’m Building
+
+I am architecting **AI-VIBE-ECOSYSTEM v2.0**, a human-first developer platform where agents don't just write code—they collaborate within a unified system architecture. This ecosystem exists to bridge the gap between high-level intent and production-grade execution by treating AI as a first-class citizen in the developer's toolkit. This portfolio represents the **AI Product lens** into that system, focusing on the interface between human perception and agentic reasoning.
+
+---
+
+## 🧩 The AI-VIBE Products (AI Focus)
+
+While the ecosystem spans 5 products, my work here focuses on the conversational and generative interfaces:
+
+- **AI-VIBE-ChatWeb**: The human-agent conversational hub. I focus on real-time streaming, context window management, and reducing the "hallucination threshold" through better UI feedback.
+- **AI-VIBE-WebBuilder**: Our generative site architect. I work on the frontend mechanisms that allow agents to manipulate design systems and layout components.
+- **AI-VIBE-CLI**: Ensuring the terminal experience provides the same level of agentic insight as our web interfaces.
+- *Integrations*: Deeply synchronized with **Automation** for background agent orchestration and **VSCode** for the developer's creative flow.
+
+---
+
+## ⚙️ How This Portfolio Fits the Ecosystem
+
+This portfolio demonstrates the **Product Logic & LLM UX** layer of the AI-VIBE-ECOSYSTEM. It showcases how we build interfaces that don't just "show" AI, but actually leverage it to improve developer outcomes. It aligns with the **ChatWeb → Builder** workflow, where a conversation becomes a production-ready application through a series of agentic interactions.
+
+---
+
+## 🤖 Agents & Workflows I Use
+
+In building this ecosystem, I leverage specialized agent workflows:
+- **UX Architect**: Using agents to simulate user paths and identify friction points in complex AI interactions.
+- **Creative Partner**: Leveraging LLMs to generate design variations and accessibility audits in real-time.
+- **TDD Guide**: Ensuring that every generative UI component is backed by robust, agent-verified tests.
+
+---
+
+## 💎 Design & Quality Principles
+
+- **Human-First Development**: AI is a teammate, not a replacement. Every design decision starts with how it empowers the human developer.
+- **Real-Time as Standard**: Streaming responses and immediate visual feedback are requirements for agentic trust.
+- **Nostalgic Innovation**: Choosing a retro 90s aesthetic for this portfolio to remind us that while the tech changes, the core principles of accessible, functional design remain constant.
+- **Tradeoffs Accepted**: Choosing inline styles and a nostalgic theme to prove that great product engineering transcends modern CSS frameworks.
+
+---
+
 
 ## Features
 
@@ -28,11 +70,11 @@ Frontend Engineer specializing in building AI-powered products, chat interfaces,
 
 ## Tech Stack
 
-- **Frontend:** React 18, TypeScript
+- **Frontend:** React 19, TypeScript
 - **Styling:** Inline styles (retro Windows 95 aesthetic)
-- **Animations:** Framer Motion
-- **Build:** Vite
-- **Deployment:** GitHub Pages
+- **Animations:** Framer Motion 12
+- **Build:** Vite 6.x
+- **Deployment:** GitHub Pages, Vercel, Netlify
 
 ---
 
@@ -40,7 +82,9 @@ Frontend Engineer specializing in building AI-powered products, chat interfaces,
 
 | Platform | URL |
 |----------|-----|
-| **GitHub Pages** | [mk-knight23.github.io/05-portfolio-frontend-ai](https://mk-knight23.github.io/05-portfolio-frontend-ai/) |
+| **GitHub Pages** | [mk-knight23.github.io/05-portfolio-site-v2](https://mk-knight23.github.io/05-portfolio-site-v2/) |
+| **Vercel** | [05-portfolio-personal-site-nextjs.vercel.app](https://05-portfolio-personal-site-nextjs.vercel.app/) |
+| **Netlify** | [05-portfolio-frontend-ai.netlify.app](https://05-portfolio-frontend-ai.netlify.app/) |
 
 ---
 
@@ -75,6 +119,29 @@ npm run build
 
 ---
 
-*Kazi Musharraf — Frontend Engineer (AI Products) — Part of 8-portfolio ecosystem*
+## Additional Features (vNext)
 
-*Last Updated: January 2025*
+Three focused additions for AI frontend credibility:
+
+### AI Chat Demo Section
+**Why added:** AI interfaces need to demonstrate understanding of LLM streaming UX patterns.
+
+**What changed:** Added a dedicated chat demo section showing simulated streaming conversation. Displays user/AI messages with typewriter cursor animation using CSS keyframes. Retro Windows 95 terminal styling matches the portfolio theme. Shows I understand streaming chat UX without requiring actual API calls.
+
+### Streaming Response Demo
+**Why added:** AI interfaces need to show they understand LLM streaming, not just request-response.
+
+**What changed:** Added a small interactive demo showing simulated streaming text generation. The chat interface demonstrates the character-by-character rendering pattern used in real LLM responses. Pure client-side—no API keys or backend needed.
+
+### Latency Awareness
+**Why added:** AI products live or die by perceived responsiveness.
+
+**What changed:** Chat demo includes visual cues for streaming state (blinking cursor). Messaging emphasizes real-time UX patterns. Shows I understand that AI interfaces need to feel responsive even when generation takes time.
+
+### Intentionally Rejected: Real AI Integration
+I considered wiring up actual OpenAI API calls. Rejected because that would require API keys (security risk) or a backend (violates static-first principle). The chat demo demonstrates the UX pattern without requiring infrastructure. If a hiring manager wants to see real AI, we can talk through it—I'm not burning API quota for a portfolio.
+
+
+---
+
+*Last Updated: January 31, 2026*

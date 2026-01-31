@@ -6,12 +6,12 @@ function Auth() {
 
   const handleSubmit = (event: React.FormEvent) => {
     event.preventDefault();
-    console.log('Sign Up:', { email, password });
+    // Auth logic would go here
   };
 
   const handleLogin = (event: React.FormEvent) => {
     event.preventDefault();
-    console.log('Login:', { email, password });
+    // Auth logic would go here
   };
 
   return (

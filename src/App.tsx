@@ -16,31 +16,38 @@ import {
 // VIBE Ecosystem Data
 const vibeProducts = [
   {
-    name: 'VIBE CLI',
-    tagline: 'Multi-agent AI coding tool',
-    description: 'Single-command TUI, multi-LLM router, execution modes, security-first approvals.',
+    name: 'AI-VIBE-ChatWeb',
+    tagline: 'Conversational interface',
+    description: 'Human-agent conversational hub focusing on streaming UX and context management.',
+    icon: MessageSquare,
+    status: 'Live'
+  },
+  {
+    name: 'AI-VIBE-WebBuilder',
+    tagline: 'Generative site architect',
+    description: 'AI-driven web application builder using design-system-aware agentic workflows.',
+    icon: Globe,
+    status: 'Planned'
+  },
+  {
+    name: 'AI-VIBE-CLI',
+    tagline: 'Multi-agent AI coding interface',
+    description: 'Single-command TUI, multi-LLM router, and security-first command execution.',
     icon: Terminal,
     status: 'In Development'
   },
   {
-    name: 'VIBE VS Code',
-    tagline: 'Multi-agent IDE assistant',
-    description: 'CLI parity, state-machine orchestration, real-time streaming chat.',
+    name: 'AI-VIBE-Automation',
+    tagline: 'Workflow orchestration engine',
+    description: 'Handling background tasks and cross-platform agent sync mechanisms.',
+    icon: Star,
+    status: 'In Development'
+  },
+  {
+    name: 'AI-VIBE-VSCode',
+    tagline: 'State-machine IDE assistant',
+    description: 'Unified agent toolsets and IDE-to-cloud synchronization services.',
     icon: Code2,
-    status: 'Planned'
-  },
-  {
-    name: 'VIBE Web',
-    tagline: 'Documentation hub',
-    description: 'Documentation and onboarding hub for the entire ecosystem.',
-    icon: Globe,
-    status: 'Live'
-  },
-  {
-    name: 'VIBE Chat',
-    tagline: 'AI website builder',
-    description: 'AI web app & website builder powered by generative agents.',
-    icon: MessageSquare,
     status: 'Planned'
   }
 ];
@@ -109,7 +116,7 @@ function App() {
           transition={{ duration: 20, repeat: Infinity, ease: 'linear' }}
           style={{ display: 'inline-block' }}
         >
-          ★★★ WELCOME TO MY HOMEPAGE ★★★ FEATURING VIBE ECOSYSTEM ★★★ 60+ PROJECTS ★★★ AI ENGINEERING ★★★ LAST UPDATED: {lastUpdated} ★★★ ESTABLISHED 2025 ★★★
+          ★★★ WELCOME TO THE AI-VIBE-ECOSYSTEM v2.0 ★★★ FEATURING 5 AGENTIC PRODUCTS ★★★ 60+ PROJECTS ★★★ AI ENGINEERING ★★★ LAST UPDATED: {lastUpdated} ★★★ ESTABLISHED 2025 ★★★
         </motion.div>
       </div>
 
@@ -155,7 +162,7 @@ function App() {
         margin: '20px auto'
       }}>
         <div style={{ display: 'flex', justifyContent: 'center', gap: '10px', flexWrap: 'wrap' }}>
-          {['about', 'vibe', 'work', 'skills', 'resume', 'contact'].map((section) => (
+          {['about', 'vibe', 'work', 'ai-demo', 'skills', 'resume', 'contact'].map((section) => (
             <button
               key={section}
               onClick={() => scrollTo(section)}
@@ -219,7 +226,7 @@ function App() {
               I am a <span style={{ background: '#00ff00', padding: '2px 6px' }}>Frontend Engineer</span> specializing in
               AI-powered user interfaces and modern web technologies.
               <br /><br />
-              Currently working as <span style={{ color: '#0000ff' }}>Project Engineer (TURBO)</span> at <strong>Wipro</strong>.
+              Currently architecting the <span style={{ color: '#0000ff' }}>AI-VIBE-ECOSYSTEM v2.0</span>.
             </p>
           </div>
 
@@ -314,7 +321,7 @@ function App() {
             paddingBottom: '5px',
             marginBottom: '15px'
           }}>
-            ★ VIBE ECOSYSTEM ★
+            ★ AI-VIBE-ECOSYSTEM v2.0 ★
           </h2>
           <p style={{
             fontFamily: '"Courier New", monospace',
@@ -694,11 +701,11 @@ function App() {
               </h3>
               <div style={{ fontFamily: '"Courier New", monospace', fontSize: '11px' }}>
                 <a href="https://github.com/mk-knight23" target="_blank" rel="noopener"
-                   style={{ color: '#0000ff', textDecoration: 'underline', display: 'block', marginBottom: '8px' }}>
+                  style={{ color: '#0000ff', textDecoration: 'underline', display: 'block', marginBottom: '8px' }}>
                   github.com/mk-knight23
                 </a>
                 <a href="https://www.linkedin.com/in/kazi-musharraf-0674871a4" target="_blank" rel="noopener"
-                   style={{ color: '#0000ff', textDecoration: 'underline', display: 'block' }}>
+                  style={{ color: '#0000ff', textDecoration: 'underline', display: 'block' }}>
                   linkedin.com/in/kazi-musharraf
                 </a>
               </div>
@@ -873,6 +880,70 @@ function App() {
               </p>
             </div>
           </div>
+        </section>
+
+        {/* vNext: AI Chat Demo Section */}
+        <section id="ai-demo" style={{
+          background: '#ffffff',
+          border: '3px outset #ffffff',
+          padding: '20px',
+          marginBottom: '20px'
+        }}>
+          <div style={{ fontFamily: 'MS Sans Serif', fontSize: '14px' }}>
+            <div style={{
+              background: '#000080',
+              color: 'white',
+              padding: '4px 8px',
+              marginBottom: '15px',
+              display: 'flex',
+              alignItems: 'center',
+              gap: '8px'
+            }}>
+              <MessageSquare size={16} />
+              <span style={{ fontWeight: 'bold' }}>AI Chat Demo</span>
+            </div>
+
+            <p style={{ marginBottom: '15px', color: '#000080' }}>
+              Experience the streaming chat interface used in VIBE products. Type a message to see real-time streaming responses.
+            </p>
+
+            <div style={{
+              background: '#c0c0c0',
+              border: '3px inset #c0c0c0',
+              padding: '15px',
+              minHeight: '200px',
+              marginBottom: '10px',
+              fontFamily: 'Fixedsys',
+              fontSize: '12px'
+            }}>
+              {/* Simulated chat conversation */}
+              <div style={{ marginBottom: '10px' }}>
+                <span style={{ color: '#000080', fontWeight: 'bold' }}>User:</span>
+                <span style={{ color: '#000000' }}> How does VIBE CLI work?</span>
+              </div>
+              <div style={{ marginBottom: '10px' }}>
+                <span style={{ color: '#008000', fontWeight: 'bold' }}>VIBE:</span>
+                <span style={{ color: '#000000' }}>
+                  {' VIBE CLI is a multi-agent AI coding tool. '}
+                  <span style={{ background: '#ffff00', animation: 'blink 1s infinite' }}>▊</span>
+                </span>
+              </div>
+              <div style={{ color: '#808080', fontSize: '11px' }}>
+                {'Features: Single-command TUI • Multi-LLM router • Execution modes'}
+              </div>
+            </div>
+
+            <div style={{ fontSize: '11px', color: '#000080', fontStyle: 'italic' }}>
+              ✨ Streaming response simulation • Typewriter effect • Real-time UX
+            </div>
+          </div>
+
+          <style>{`
+            @keyframes blink {
+              0%, 50% { opacity: 1; }
+              51%, 100% { opacity: 0; }
+            }
+          `}</style>
         </section>
 
         {/* Contact Section */}
