@@ -8,5 +8,5 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
-  base: process.env.VERCEL || process.env.NETLIFY ? './' : '/05-portfolio-site-v2/',
+  base: './',
 })

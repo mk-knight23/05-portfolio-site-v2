@@ -7,6 +7,9 @@
 [![GitHub Pages](https://img.shields.io/badge/GitHub-Pages-222222?style=for-the-badge&logo=github)](https://mk-knight23.github.io/05-portfolio-site-v2/)
 [![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel)](https://05-portfolio-personal-site-nextjs.vercel.app/)
 [![Netlify](https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify)](https://05-portfolio-frontend-ai.netlify.app/)
+[![Cloudflare](https://img.shields.io/badge/Cloudflare-F38020?style=for-the-badge&logo=cloudflare)](https://05-portfolio-frontend-ai.mk-knight970.workers.dev/)
+[![Cloud Run](https://img.shields.io/badge/Google_Cloud_Run-4285F4?style=for-the-badge&logo=google-cloud&logoColor=white)](https://05-portfolio-frontend-ai.mk-knight970.cloud.run/)
+[![Render](https://img.shields.io/badge/Render-46E3B7?style=for-the-badge&logo=render&logoColor=white)](https://05-portfolio-frontend-ai.onrender.com/)
 [![Source](https://img.shields.io/badge/Source-Code-181717?style=for-the-badge&logo=github)](https://github.com/mk-knight23/05-portfolio-frontend-ai)
 
 ---
@@ -82,9 +85,12 @@ In building this ecosystem, I leverage specialized agent workflows:
 
 | Platform | URL |
 |----------|-----|
-| **GitHub Pages** | [mk-knight23.github.io/05-portfolio-site-v2](https://mk-knight23.github.io/05-portfolio-site-v2/) |
+| **Render** | [05-portfolio-frontend-ai.onrender.com](https://05-portfolio-frontend-ai.onrender.com/) |
+| **Cloud Run** | [05-portfolio-frontend-ai.mk-knight970.cloud.run](https://05-portfolio-frontend-ai.mk-knight970.cloud.run/) |
+| **Cloudflare Workers** | [05-portfolio-frontend-ai.mk-knight970.workers.dev](https://05-portfolio-frontend-ai.mk-knight970.workers.dev/) |
 | **Vercel** | [05-portfolio-personal-site-nextjs.vercel.app](https://05-portfolio-personal-site-nextjs.vercel.app/) |
 | **Netlify** | [05-portfolio-frontend-ai.netlify.app](https://05-portfolio-frontend-ai.netlify.app/) |
+| **GitHub Pages** | [mk-knight23.github.io/05-portfolio-site-v2](https://mk-knight23.github.io/05-portfolio-site-v2/) |
 
 ---
 
@@ -144,4 +150,4 @@ I considered wiring up actual OpenAI API calls. Rejected because that would requ
 
 ---
 
-*Last Updated: January 31, 2026*
+*Last Updated: February 01, 2026*
